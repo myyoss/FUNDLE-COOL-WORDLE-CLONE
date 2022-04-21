@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FUNDLE</title>
+  <link rel="icon" type="image/png" href="./images/favicon.jpg">
+  <link rel="stylesheet" href="dist/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Slab:wght@900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+  <div class="alert-container" data-alert-container></div>
+
+  <div class="wrapper" id="wrapper">
+
+    <div class="column-left">
+      <div class="column-left__top">
+        <div class="btn" onclick="handleShowWindow('logreg')"><img src="./images/login.png" alt=""></div>
+        <div class="hello"></div>
+      </div>
+      <div class="column-left__middle"></div>
+    </div>
+
+    <div class="column-center">
+      <div class="column-center__top">
+        <h1><span style="color: #ffffff;"><span style="color: #ffa500;">F</span>undl<span
+              style="color: #349915;">e</span></span></h1>
+      </div>
+
+      <div class="column-center__middle">
+        <div class="column-center__middle__game-area">
+          <div class="column-center__middle__game-area__cubes" data-guess-grid>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+            <div class="letterbox"></div>
+          </div>
+
+
+          <div class="column-center__middle__game-area__keyboard" data-keyboard>
+            <button class="key" data-key="Q">Q</button>
+            <button class="key" data-key="W">W</button>
+            <button class="key" data-key="E">E</button>
+            <button class="key" data-key="R">R</button>
+            <button class="key" data-key="T">T</button>
+            <button class="key" data-key="Y">Y</button>
+            <button class="key" data-key="U">U</button>
+            <button class="key" data-key="I">I</button>
+            <button class="key" data-key="O">O</button>
+            <button class="key" data-key="P">P</button>
+            <div class="space"></div>
+            <button class="key" data-key="A">A</button>
+            <button class="key" data-key="S">S</button>
+            <button class="key" data-key="D">D</button>
+            <button class="key" data-key="F">F</button>
+            <button class="key" data-key="G">G</button>
+            <button class="key" data-key="H">H</button>
+            <button class="key" data-key="J">J</button>
+            <button class="key" data-key="K">K</button>
+            <button class="key" data-key="L">L</button>
+            <div class="space"></div>
+            <button data-enter class="key large">Enter</button>
+            <button class="key" data-key="Z">Z</button>
+            <button class="key" data-key="X">X</button>
+            <button class="key" data-key="C">C</button>
+            <button class="key" data-key="V">V</button>
+            <button class="key" data-key="B">B</button>
+            <button class="key" data-key="N">N</button>
+            <button class="key" data-key="M">M</button>
+            <button data-delete class="key large">
+              <img data-delete src="./images/delete.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column-right">
+      <div class="column-right__top-right">
+        <div class="btn" onclick="handleShowWindow('stats')"><img src="./images/statistics.png" alt=""> </div>
+        <div class="btn" onclick="handleShowWindow('help')"><img src="./images/helpbutton.png" alt=""></div>
+      </div>
+      <div class="column-right__middle"></div>
+    </div>
+  </div>
+
+  <div id="stats" style="display: none;">
+    <div class="stats-container">
+      <div class="column-right__middle">
+        <div class="line-1" onclick="handleShowWindow('stats')"><img src="./images/x.png" alt=""></div>
+        <div class="line-2">STATISTICS</div>
+        <div class="line-3">
+          <div class="column"><span id="played">0</span>
+            <h5>Played</h5>
+          </div>
+          <div class="column"><span id="wins">0</span>
+            <h5>Win %</h5>
+          </div>
+          <div class="column"><span id="current">0</span>
+            <h5>Current<br>Streak</h5>
+          </div>
+          <div class="column"><span id="max">0</span>
+            <h5>Max<br>Streak</h5>
+          </div>
+        </div>
+        <div class="line-4">GUESS DISTRIBUTION</div>
+        <div class="line-5">
+          <ul>
+            <li>
+              <div class="number">1 &nbsp;</div>
+              <div id="oneattempt">0</div>
+            </li>
+            <li>
+              <div class="number">2 &nbsp;</div>
+              <div id="twoattempts">0</div>
+            </li>
+            <li>
+              <div class="number">3 &nbsp;</div>
+              <div id="threeattempts">0</div>
+            </li>
+            <li>
+              <div class="number">4 &nbsp;</div>
+              <div id="fourattempts">0</div>
+            </li>
+            <li>
+              <div class="number">5 &nbsp;</div>
+              <div id="fiveattempts">0</div>
+            </li>
+            <li>
+              <div class="number">6 &nbsp;</div>
+              <div id="sixattempts">0</div>
+            </li>
+          </ul>
+        </div>
+        <div class="line-6">
+          <div class="next-fundle">
+            <div>NEXT FUNDLE</div>
+            <div id="countdown"></div>
+          </div>
+          <div class="share-stats"><button id="share">SHARE <i class="fa-solid fa-share-nodes"></i></button>
+            <div class="result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="help" style="display: none;">
+    <div class="help-container">
+      <div class="title">
+        <div class="x" onclick="handleShowWindow('help')"><img src="./images/x.png" alt=""></div>
+        <div>
+          <h1>HOW TO PLAY</h1>
+        </div>
+      </div>
+      <div class="p">Guess the <b>WORDLE</b> in six tries.</div>
+      <div class="p">Each guess must be a valid five-letter word. Hit the enter button to submit.</div>
+      <div class="p">After each guess, the color of the tiles will change to show how close your guess was to the
+        word.
+      </div>
+      <div class="examples-new">Examples</div>
+      <div class="img"><img src="./images/howToPlay.jpg" alt=""></div>
+      <div class="examples-new">A new WORDLE will be available each day!</div>
+    </div>
+  </div>
+
+  <div class="logreg" id="logreg" style="display: none;">
+    <div class="loginwrapper">
+      <div class="close" onclick="handleShowWindow('logreg')"><img src="./images/x.png" alt=""></div>
+      <div>
+        <h1>Login</h1>
+      </div>
+      <form onsubmit="handleLogin(event)" id="loginform">
+        <div class="txt_field">
+          <input type="text" name='username' required>
+          <span></span>
+          <label for="Username">Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" name='password' required autocomplete="off" class="passip"><img src="images/eye.png"
+            alt="" id="eyeImg" onclick="handlePassToggle()"></input>
+          <span></span>
+          <label for="password">Password</label>
+        </div>
+        <input type="submit" value="Login" class="submit">
+        <div class="signup_link">
+          Not a member? <span onclick="handleNotAMember()">Register</span>
+        </div>
+      </form>
+    </div>
+
+    <div class='registerwrapper' id="">
+      <div class="close" onclick="handleShowWindow('logreg')"><img src="./images/x.png" alt=""></div>
+      <div>
+        <h1>Register</h1>
+      </div>
+      <form onsubmit="handleRegister(event)" id="registerform">
+        <div class="txt_field">
+          <input type="text" name='username' required>
+          <span></span>
+          <label for="Username">Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" name='password' required autocomplete="off" class="passip"><img src="images/eye.png"
+            alt="" id="eyeImg" onclick="handlePassToggle()"></input>
+          <span></span>
+          <label for="password">Password</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" name='confirmPassword' required autocomplete="off" class="passip"><img
+            src="images/eye.png" alt="" id="eyeImg" onclick="handlePassToggle()"></input>
+          <span></span>
+          <label for="confirmPassword">Confirm Password</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" name='email' required>
+          <span></span>
+          <label for="email">Email Address</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" name='confirmEmail' required>
+          <span></span>
+          <label for="confirmEmail">Confirm Email Address</label>
+        </div>
+        <input type="submit" value="Register" class="submit">
+        <div class="signup_link">
+          Already a member? <span onclick="handleAlreadyAMember()">Login</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="dist/index.js"></script>
+</body>
+
+</html>
