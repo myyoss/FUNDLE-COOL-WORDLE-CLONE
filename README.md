@@ -1,7 +1,7 @@
 # FUNDLE! A_WORDLE_CLONE
 With some cool features:
 
-- Light colors
+- Bright colors
 - Play as many games as you want
 - Registration and statistics
 - List of top users
