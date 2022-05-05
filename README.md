@@ -4,8 +4,8 @@ With some cool features:
 - Bright colors
 - Play as many games as you want
 - Registration and statistics
-- List of top users
-- Cool sound effects
+- Real time List of ALL users starting from Top score
+- Cool sound effects!
 
 ![Screenshot](https://user-images.githubusercontent.com/93940739/165063758-6d3cb9a5-0c0e-4c1f-aeeb-82723517575d.jpg)
 ![reg](https://user-images.githubusercontent.com/93940739/165063794-892435f7-508e-4aeb-a55b-7b801c5cb740.jpg)
