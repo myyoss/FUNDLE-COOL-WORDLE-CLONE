@@ -1,4 +1,4 @@
-# FUNDLE_A_WORDLE_CLONE
+# FUNDLE! A_WORDLE_CLONE
 With some cool features:
 
 - Light colors
