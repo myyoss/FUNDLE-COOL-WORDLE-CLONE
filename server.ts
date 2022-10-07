@@ -21,9 +21,6 @@ app.use('/users', userRoutes)
 app.use('/words', wordRoutes)
 
 
-// mongoose.connect('mongodb+srv://asnafy:ZyTcRnGlhXYqaYjE@cluster0.xgv3d.mongodb.net/fundle?retryWrites=true&w=majority');
-// MONGODB_URI=mongodb+srv://michaeldubovik:michaeldubovik1991@cluster0.y9ozg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-
 const uri:any = process.env.MONGODB_URI;
 mongoose.connect(uri);
 
