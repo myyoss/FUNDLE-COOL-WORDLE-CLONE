@@ -12,13 +12,13 @@ console.log(process.env.ENV)
 const cookieParser = require('cookie-parser')
 
 const app = express();
+app.use('/users', userRoutes)
+app.use('/words', wordRoutes)
 const port = process.env.PORT || 3005;
 app.use(express.static("public"));
 app.use(express.json());
 app.use(cookieParser());
 
-app.use('/users', userRoutes)
-app.use('/words', wordRoutes)
 
 
 const uri:any = process.env.MONGODB_URI;
