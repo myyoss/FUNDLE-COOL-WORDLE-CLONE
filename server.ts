@@ -1,9 +1,9 @@
+import userRoutes from "./userRoutes"
+import wordRoutes from "./wordRoutes"
 import express from 'express';
 import mongoose from "mongoose";
 require('dotenv').config() //===> insert high as possible, before routs
 
-import userRoutes from "./userRoutes"
-import wordRoutes from "./wordRoutes"
 
 
 
