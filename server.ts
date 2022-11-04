@@ -1,11 +1,16 @@
-import express from 'express';
+// import express from 'express';
 import mongoose from "mongoose";
 require('dotenv').config() //===> insert high as possible, before routs
 
-import userRoutes from "./routes/userRoutes"
-import wordRoutes from "./routes/wordRoutes"
+// import userRoutes from "./routes/userRoutes"
+// import wordRoutes from "./routes/wordRoutes"
 
+var express = require('express');
+var router = express.Router();
 
+const routes = require('./routes')
+const userRoutes = require("./routes/userRoutes")
+const wordRoutes = require("./routes/wordRoutes")
 
 console.log(process.env.ENV)
 
