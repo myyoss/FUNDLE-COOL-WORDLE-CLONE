@@ -9,8 +9,8 @@ var express = require('express');
 var router = express.Router();
 
 const routes = require('./routes')
-const userRoutes = require("./routes/userRoutes")
-const wordRoutes = require("./routes/wordRoutes")
+const userRoutes = require("../routes/userRoutes")
+const wordRoutes = require("../routes/wordRoutes")
 
 console.log(process.env.ENV)
 
