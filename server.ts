@@ -4,7 +4,26 @@ require('dotenv').config() //===> insert high as possible, before routs
 import userRoutes from "./routes/userRoutes"
 import wordRoutes from "./routes/wordRoutes"
 
+const router = express.Router();
 
+import { addUser, getUser, updateUser, loadUser, getOutUser, loadAllUsers } from "./controllers/usersCont"
+router
+    // .get('/get-user', isAdmin, getUser)
+    .get('/get-user', getUser)
+    .get('/get-out-user', getOutUser)
+    .get('/load-all-users', loadAllUsers)
+    .get('/load-user', loadUser)
+    .post('/add-user', addUser)
+    .patch('/update-user', updateUser)
+
+    import {addToDB, getDailyWord, wordExists} from "./controllers/wordsCont"
+
+
+    router
+    .get('/get-word', getDailyWord)
+    .get('/get-guessCheck', wordExists)
+    
+    addToDB()
 
 console.log(process.env.ENV)
 

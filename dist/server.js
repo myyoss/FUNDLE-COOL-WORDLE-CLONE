@@ -8,6 +8,21 @@ const mongoose_1 = __importDefault(require("mongoose"));
 require('dotenv').config(); //===> insert high as possible, before routs
 const userRoutes_1 = __importDefault(require("./routes/userRoutes"));
 const wordRoutes_1 = __importDefault(require("./routes/wordRoutes"));
+const router = express_1.default.Router();
+const usersCont_1 = require("./controllers/usersCont");
+router
+    // .get('/get-user', isAdmin, getUser)
+    .get('/get-user', usersCont_1.getUser)
+    .get('/get-out-user', usersCont_1.getOutUser)
+    .get('/load-all-users', usersCont_1.loadAllUsers)
+    .get('/load-user', usersCont_1.loadUser)
+    .post('/add-user', usersCont_1.addUser)
+    .patch('/update-user', usersCont_1.updateUser);
+const wordsCont_1 = require("./controllers/wordsCont");
+router
+    .get('/get-word', wordsCont_1.getDailyWord)
+    .get('/get-guessCheck', wordsCont_1.wordExists);
+wordsCont_1.addToDB();
 console.log(process.env.ENV);
 const cookieParser = require('cookie-parser');
 const app = express_1.default();
