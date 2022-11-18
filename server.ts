@@ -6,7 +6,7 @@ import wordRoutes from "./routes/wordRoutes"
 
 // const userRoutes = require("./routes/userRoutes.ts")
 
-console.log(process.env.ENV)
+// console.log(process.env.ENV)
 
 const cookieParser = require('cookie-parser')
 
