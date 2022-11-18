@@ -3,8 +3,10 @@ import mongoose from "mongoose";
 require('dotenv').config() //===> insert high as possible, before routs
 import userRoutes from "./routes/userRoutes"
 import wordRoutes from "./routes/wordRoutes"
+require('./routes/userRoutes')
+require('./routes/wordRoutes')
 
-
+const config = require('./routes/userRoutes');
 
 console.log(process.env.ENV)
 
