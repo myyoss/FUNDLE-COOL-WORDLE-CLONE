@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const mongoose_1 = __importDefault(require("mongoose"));
 require('dotenv').config(); //===> insert high as possible, before routs
-const userRoutes_1 = __importDefault(require("./routes/userRoutes"));
-const wordRoutes_1 = __importDefault(require("./routes/wordRoutes"));
+const userRoutes_1 = __importDefault(require("C:/Users/HERO/Desktop/GIT/FUNDLE_A_WORDLE_CLONE/routes/userRoutes"));
+const wordRoutes_1 = __importDefault(require("C:/Users/HERO/Desktop/GIT/FUNDLE_A_WORDLE_CLONE/routes/wordRoutes"));
 // const userRoutes = require("./routes/userRoutes.ts")
 console.log(process.env.ENV);
 const cookieParser = require('cookie-parser');
