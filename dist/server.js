@@ -8,6 +8,7 @@ const mongoose_1 = __importDefault(require("mongoose"));
 require('dotenv').config(); //===> insert high as possible, before routs
 const userRoutes_1 = __importDefault(require("./routes/userRoutes"));
 const wordRoutes_1 = __importDefault(require("./routes/wordRoutes"));
+// const userRoutes = require("./routes/userRoutes.ts")
 console.log(process.env.ENV);
 const cookieParser = require('cookie-parser');
 const app = express_1.default();

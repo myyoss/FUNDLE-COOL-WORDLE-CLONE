@@ -4,7 +4,7 @@ require('dotenv').config() //===> insert high as possible, before routs
 import userRoutes from "./routes/userRoutes"
 import wordRoutes from "./routes/wordRoutes"
 
-
+// const userRoutes = require("./routes/userRoutes.ts")
 
 console.log(process.env.ENV)
 
