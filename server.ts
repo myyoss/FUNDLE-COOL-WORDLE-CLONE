@@ -5,6 +5,10 @@ import userRoutes from "./routes/userRoutes"
 import wordRoutes from "./routes/wordRoutes"
 // require('./routes/userRoutes')
 // require('./routes/wordRoutes')
+// import router from './routes/userRoutes';
+// import router from './routes/wordRoutes';
+module.exports = userRoutes;
+module.exports = wordRoutes;
 
 const config = require('./routes/userRoutes');
 

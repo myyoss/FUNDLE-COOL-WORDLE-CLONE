@@ -10,6 +10,10 @@ const userRoutes_1 = __importDefault(require("./routes/userRoutes"));
 const wordRoutes_1 = __importDefault(require("./routes/wordRoutes"));
 // require('./routes/userRoutes')
 // require('./routes/wordRoutes')
+// import router from './routes/userRoutes';
+// import router from './routes/wordRoutes';
+module.exports = userRoutes_1.default;
+module.exports = wordRoutes_1.default;
 const config = require('./routes/userRoutes');
 console.log(process.env.ENV);
 const cookieParser = require('cookie-parser');
