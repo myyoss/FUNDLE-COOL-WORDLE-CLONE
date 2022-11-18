@@ -3,20 +3,12 @@ import mongoose from "mongoose";
 require('dotenv').config() //===> insert high as possible, before routs
 import userRoutes from "./routes/userRoutes"
 import wordRoutes from "./routes/wordRoutes"
-// require('./routes/userRoutes')
-// require('./routes/wordRoutes')
-// import router from './routes/userRoutes';
-// import router from './routes/wordRoutes';
-module.exports = userRoutes;
-module.exports = wordRoutes;
 
-const config = require('./routes/userRoutes');
+
 
 console.log(process.env.ENV)
 
 const cookieParser = require('cookie-parser')
-// const userRoutes = require('./routes/userRoutes')
-// const wordRoutes = require('./routes/wordRoutes')
 
 const app = express();
 const port = process.env.PORT || 3004;

@@ -7,5 +7,4 @@ router
     .get('/get-word', wordsCont_1.getDailyWord)
     .get('/get-guessCheck', wordsCont_1.wordExists);
 wordsCont_1.addToDB();
-module.exports = router;
 exports["default"] = router;

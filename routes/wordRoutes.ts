@@ -9,6 +9,5 @@ router
 .get('/get-guessCheck', wordExists)
 
 addToDB()
-module.exports = router;
 
 export default router;

@@ -13,6 +13,5 @@ router
     .post('/add-user', addUser)
     .patch('/update-user', updateUser)
 
-    module.exports = router;
 
 export default router;
