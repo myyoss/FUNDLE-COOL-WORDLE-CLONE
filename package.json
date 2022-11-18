@@ -4,9 +4,7 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --no-notify --exit-child index.ts",
-    "build": "npx tsc",
-    "start": "node ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
