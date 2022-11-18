@@ -1,29 +1,30 @@
 import express from 'express';
 import mongoose from "mongoose";
 require('dotenv').config() //===> insert high as possible, before routs
-import userRoutes from "./routes/userRoutes"
-import wordRoutes from "./routes/wordRoutes"
+// import userRoutes from "./routes/userRoutes"
+// import wordRoutes from "./routes/wordRoutes"
+
 
 const router = express.Router();
 
 import { addUser, getUser, updateUser, loadUser, getOutUser, loadAllUsers } from "./controllers/usersCont"
 router
-    // .get('/get-user', isAdmin, getUser)
-    .get('/get-user', getUser)
-    .get('/get-out-user', getOutUser)
-    .get('/load-all-users', loadAllUsers)
-    .get('/load-user', loadUser)
-    .post('/add-user', addUser)
-    .patch('/update-user', updateUser)
+// .get('/get-user', isAdmin, getUser)
+.get('/get-user', getUser)
+.get('/get-out-user', getOutUser)
+.get('/load-all-users', loadAllUsers)
+.get('/load-user', loadUser)
+.post('/add-user', addUser)
+.patch('/update-user', updateUser)
 
-    import {addToDB, getDailyWord, wordExists} from "./controllers/wordsCont"
+import {addToDB, getDailyWord, wordExists} from "./controllers/wordsCont"
 
 
-    router
-    .get('/get-word', getDailyWord)
-    .get('/get-guessCheck', wordExists)
-    
-    addToDB()
+router
+.get('/get-word', getDailyWord)
+.get('/get-guessCheck', wordExists)
+
+addToDB()
 
 console.log(process.env.ENV)
 
@@ -35,8 +36,10 @@ app.use(express.static("public"));
 app.use(express.json()); 
 app.use(cookieParser());
 
-app.use('/users', userRoutes)
-app.use('/words', wordRoutes)
+// const routes = require('./routes')
+// app.use('/', routes);
+// app.use('/users', userRoutes)
+// app.use('/words', wordRoutes)
 
 
 // mongoose.connect('mongodb+srv://asnafy:ZyTcRnGlhXYqaYjE@cluster0.xgv3d.mongodb.net/fundle?retryWrites=true&w=majority');
