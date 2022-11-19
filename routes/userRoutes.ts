@@ -12,6 +12,7 @@ router
     .get('/load-user', loadUser)
     .post('/add-user', addUser)
     .patch('/update-user', updateUser)
+    // .get('/get-user', isAdmin, getUser)
 
 
 export default router;
