@@ -12,4 +12,5 @@ router
     .get('/load-user', usersCont_1.loadUser)
     .post('/add-user', usersCont_1.addUser)
     .patch('/update-user', usersCont_1.updateUser);
+// .get('/get-user', isAdmin, getUser)
 exports["default"] = router;

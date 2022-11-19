@@ -1,8 +1,8 @@
 import express from 'express';
 import mongoose from "mongoose";
 require('dotenv').config() //===> insert high as possible, before routs
-import userroutes from "./routes/userroutes"
-import wordroutes from "./routes/wordroutes"
+import userRoutes from "./routes/userRoutes"
+import wordRoutes from "./routes/wordRoutes"
 
 
 // console.log(process.env.ENV)
@@ -15,8 +15,8 @@ app.use(express.static("public"));
 app.use(express.json()); 
 app.use(cookieParser());
 
-app.use('/users', userroutes) 
-app.use('/words', wordroutes)
+app.use('/users', userRoutes) 
+app.use('/words', wordRoutes)
 
 
 const uri:any = process.env.MONGODB_URI;
