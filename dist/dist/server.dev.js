@@ -10,9 +10,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var userRoutes_1 = __importDefault(require("../routes/userRoutes"));
+var userRoutes_1 = __importDefault(require("./routes/userRoutes"));
 
-var wordRoutes_1 = __importDefault(require("../routes/wordRoutes"));
+var wordRoutes_1 = __importDefault(require("./routes/wordRoutes"));
 
 var express_1 = __importDefault(require("express"));
 
