@@ -15,11 +15,8 @@ const port = process.env.PORT || 3006;
 app.use(express_1.default.static("public"));
 app.use(express_1.default.json());
 app.use(cookieParser());
-const myTimeout = setTimeout(myGreeting, 5000);
-function myGreeting() {
-    app.use('/users', userRoutes_1.default);
-    app.use('/words', wordRoutes_1.default);
-}
+app.use('/users', userRoutes_1.default);
+app.use('/words', wordRoutes_1.default);
 const uri = process.env.MONGODB_URI;
 mongoose_1.default.connect(uri);
 app.listen(port, () => {

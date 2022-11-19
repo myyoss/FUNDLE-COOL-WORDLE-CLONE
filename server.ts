@@ -15,13 +15,8 @@ app.use(express.static("public"));
 app.use(express.json()); 
 app.use(cookieParser());
 
-const myTimeout = setTimeout(myGreeting, 5000);
-
-function myGreeting() {
-  app.use('/users', userRoutes) 
-  app.use('/words', wordRoutes)
-}
-
+app.use('/users', userRoutes) 
+app.use('/words', wordRoutes)
 
 
 const uri:any = process.env.MONGODB_URI;
