@@ -1,6 +1,4 @@
 "use strict";
-var express = require('express');
-var router = express.Router();
 exports.__esModule = true;
 var express_1 = require("express");
 var router = express_1["default"].Router();
@@ -10,4 +8,3 @@ router
     .get('/get-guessCheck', wordsCont_1.wordExists);
 wordsCont_1.addToDB();
 exports["default"] = router;
-module.exports = router;

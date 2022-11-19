@@ -1,6 +1,4 @@
 "use strict";
-var express = require('express');
-var router = express.Router();
 exports.__esModule = true;
 var express_1 = require("express");
 var router = express_1["default"].Router();
@@ -15,4 +13,3 @@ router
     .post('/add-user', usersCont_1.addUser)
     .patch('/update-user', usersCont_1.updateUser);
 exports["default"] = router;
-module.exports = router;
