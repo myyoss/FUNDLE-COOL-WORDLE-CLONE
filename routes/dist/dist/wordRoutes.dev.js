@@ -1,6 +1,8 @@
 "use strict";
 
-// "use strict";
+var express = require('express');
+
+var router = express.Router();
 exports.__esModule = true;
 
 var express_1 = require("express");
@@ -12,3 +14,4 @@ var wordsCont_1 = require("../controllers/wordsCont");
 router.get('/get-word', wordsCont_1.getDailyWord).get('/get-guessCheck', wordsCont_1.wordExists);
 wordsCont_1.addToDB();
 exports["default"] = router;
+module.exports = router;
