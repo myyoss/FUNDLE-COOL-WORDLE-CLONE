@@ -10,18 +10,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var userRoutes_1 = __importDefault(require("./routes/userRoutes"));
-
-var wordRoutes_1 = __importDefault(require("./routes/wordRoutes"));
-
 var express_1 = __importDefault(require("express"));
 
 var mongoose_1 = __importDefault(require("mongoose"));
 
 require('dotenv').config(); //===> insert high as possible, before routs
-// import userRoutes from "./routes/userRoutes"
-// import wordRoutes from "./routes/wordRoutes"
-// console.log(process.env.ENV)
+
+
+var userRoutes_1 = __importDefault(require("./routes/userRoutes"));
+
+var wordRoutes_1 = __importDefault(require("./routes/wordRoutes")); // console.log(process.env.ENV)
 
 
 var cookieParser = require('cookie-parser');
