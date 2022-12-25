@@ -10,7 +10,7 @@ const userRoutes_1 = __importDefault(require("./routes/userRoutes"));
 const wordRoutes_1 = __importDefault(require("./routes/wordRoutes"));
 // console.log(process.env.ENV)
 const cookieParser = require('cookie-parser');
-const app = express_1.default();
+const app = (0, express_1.default)();
 const port = process.env.PORT || 3006;
 app.use(express_1.default.static("public"));
 app.use(express_1.default.json());
@@ -22,3 +22,4 @@ mongoose_1.default.connect(uri);
 app.listen(port, () => {
     return console.log(`Express is listening at http://localhost:${port}`);
 });
+//# sourceMappingURL=server.js.map

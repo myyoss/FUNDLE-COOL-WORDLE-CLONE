@@ -1,0 +1,1 @@
+{"version":3,"file":"wordsModel.js","sourceRoot":"","sources":["../../model/wordsModel.ts"],"names":[],"mappings":";;;;;AAAA,wDAAgC;AAEhC,MAAM,UAAU,GAAG,IAAI,kBAAQ,CAAC,MAAM,CAAC;IACnC,IAAI,EAAE,MAAM;IACZ,UAAU,EAAE,MAAM;CACrB,CAAC,CAAA;AAEF,MAAM,UAAU,GAAG,kBAAQ,CAAC,KAAK,CAAC,aAAa,EAAE,UAAU,CAAC,CAAC;AAE7D,kBAAe,UAAU,CAAC"}

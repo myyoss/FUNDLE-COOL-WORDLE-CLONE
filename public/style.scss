@@ -1,4 +1,4 @@
-$background: #44b7e4;
+$background: #44b7e479;
 $popbackground: #135e7c;
 $outer-pop-background:#135e7c71;
 $borders: #ffffff;
@@ -98,14 +98,15 @@ body {
       min-width: 40%;
       height: 18%;
       background-color: #4ac225;
-      border: 3px solid white;
-      border-radius: 10px;
+      border: 2px solid white;
+      border-radius: 2px;
       padding: 2%;
-
     }
   }
 }
-
+.allUsersStats::-webkit-scrollbar {
+  display: none;
+}
 .column-center {
   &__top {
     height: 50px;
@@ -158,8 +159,8 @@ body {
           }
 
           &[data-state="wrong"] {
-            border-color: hsl(240, 2%, 23%);
-            background-color: hsl(240, 2%, 23%);
+            // border-color: #39393c;
+            // background-color: #39393c;
           }
 
           &[data-state="wrong-location"] {
@@ -222,7 +223,9 @@ body {
       }
 
       .key.wrong {
-        --lightness: 23%
+        background-color: #39393c00;
+
+        // --lightness: 23%
       }
 
       .key.wrong-location {

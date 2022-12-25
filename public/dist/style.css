@@ -12,7 +12,7 @@ input:-webkit-autofill {
 
 body {
   margin: 0;
-  background-color: #44b7e4;
+  background-color: #44b7e479;
   overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
@@ -78,9 +78,13 @@ body {
   min-width: 40%;
   height: 18%;
   background-color: #4ac225;
-  border: 3px solid white;
-  border-radius: 10px;
+  border: 2px solid white;
+  border-radius: 2px;
   padding: 2%;
+}
+
+.allUsersStats::-webkit-scrollbar {
+  display: none;
 }
 
 .column-center__top {
@@ -102,7 +106,7 @@ body {
 }
 .column-center__middle__game-area {
   padding-top: 50px;
-  background-color: #44b7e4;
+  background-color: #44b7e479;
   display: grid;
 }
 .column-center__middle__game-area__cubes {
@@ -121,17 +125,13 @@ body {
   font-weight: 600;
   width: 60px;
   height: 60px;
-  background-color: #44b7e4;
+  background-color: #44b7e479;
   border: 2px solid #ffffff;
   color: white;
   transition: transform 250ms linear;
 }
 .column-center__middle__game-area__cubes .letterbox[data-state=active] {
   border-color: #565758;
-}
-.column-center__middle__game-area__cubes .letterbox[data-state=wrong] {
-  border-color: #39393c;
-  background-color: #39393c;
 }
 .column-center__middle__game-area__cubes .letterbox[data-state=wrong-location] {
   border-color: #bca334;
@@ -182,7 +182,7 @@ body {
   --lightness-offset: 10%;
 }
 .column-center__middle__game-area .key.wrong {
-  --lightness: 23% ;
+  background-color: #39393c00;
 }
 .column-center__middle__game-area .key.wrong-location {
   --hue: 49;
@@ -557,7 +557,7 @@ body {
 }
 .loginwrapper form .txt_field input,
 .registerwrapper form .txt_field input {
-  background-color: #44b7e4;
+  background-color: #44b7e479;
   width: 100%;
   padding: 0 5px;
   height: 20px;

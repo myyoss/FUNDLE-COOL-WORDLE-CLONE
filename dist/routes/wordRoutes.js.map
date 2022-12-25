@@ -1,0 +1,1 @@
+{"version":3,"file":"wordRoutes.js","sourceRoot":"","sources":["../../routes/wordRoutes.ts"],"names":[],"mappings":";;;;;AAAA,sDAA8B;AAC9B,MAAM,MAAM,GAAG,iBAAO,CAAC,MAAM,EAAE,CAAC;AAEhC,wDAA0E;AAG1E,MAAM;KACL,GAAG,CAAC,WAAW,EAAE,wBAAY,CAAC;KAC9B,GAAG,CAAC,iBAAiB,EAAE,sBAAU,CAAC,CAAA;AAEnC,IAAA,mBAAO,GAAE,CAAA;AAET,kBAAe,MAAM,CAAC"}
