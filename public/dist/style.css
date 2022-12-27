@@ -755,7 +755,7 @@ body {
     transform: translateY(0%);
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   body {
     width: 100%;
     height: 90vh;
