@@ -924,7 +924,7 @@ body {
     box-sizing: border-box;
     overflow-y: hidden;
     min-width: 0px;
-    background-color: #538d4e;
+    // background-color: #538d4e;
   }
   
   .wrapper {
@@ -1023,9 +1023,9 @@ body {
   }
   
   .column-center {
-    div{
-      border: 1px solid red;
-    }
+    // div{
+    //   border: 1px solid red;
+    // }
 
     &__top {
       height: 50px;

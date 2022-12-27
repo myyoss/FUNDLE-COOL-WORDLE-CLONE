@@ -765,7 +765,6 @@ body {
     box-sizing: border-box;
     overflow-y: hidden;
     min-width: 0px;
-    background-color: #538d4e;
   }
 
   .wrapper {
@@ -841,9 +840,6 @@ body {
     display: none;
   }
 
-  .column-center div {
-    border: 1px solid red;
-  }
   .column-center__top {
     height: 50px;
     display: flex;
