@@ -219,9 +219,7 @@ body {
       }
 
       &__keyboard {
-        box-sizing: border-box;
         padding-top: 4vh;
-        padding: 1em;
         width: 40rem;
         margin: auto;
         display: grid;
@@ -1120,13 +1118,16 @@ body {
         }
   
         &__keyboard {
+          box-sizing: border-box;
           padding-top: 4vh;
+          padding-left: 1rem;
+          padding-right: 1rem;
           width: 26rem;
           margin: auto;
           display: grid;
           grid-template-columns: repeat(20, minmax(auto, 1em));
-          grid-auto-rows: 1.4em;
-          gap: .35em;
+          grid-auto-rows: 1.6em;
+          gap: .15em;
           justify-content: center;
           font-size: clamp(1.5rem, 2.5vmin, 1.5rem);
         }
