@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap");
-div {
-  border: red solid 1px;
-}
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -145,16 +141,20 @@ body {
   width: 60px;
   height: 60px;
   background-color: #000000;
-  border: 2px solid #ffffff;
+  border: 2px solid #ffffff9e;
   color: white;
   transition: transform 250ms linear;
 }
 .column-center__middle__game-area__cubes .letterbox[data-state=active] {
   border-color: #565758;
 }
+.column-center__middle__game-area__cubes .letterbox[data-state=wrong] {
+  border-color: #39393c;
+  background-color: #39393c;
+}
 .column-center__middle__game-area__cubes .letterbox[data-state=wrong-location] {
-  border-color: #bca334;
-  background-color: #bca334;
+  border-color: #a26a02;
+  background-color: #a26a02;
 }
 .column-center__middle__game-area__cubes .letterbox[data-state=correct] {
   border-color: #538d4e;
@@ -180,7 +180,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(var(--hue, 48), var(--saturation, 79%), calc(var(--lightness-offset, 0%) + var(--lightness, 55%)));
+  background-color: hsl(var(--hue, 200), var(--saturation, 1%), calc(var(--lightness-offset, 0%) + var(--lightness, 51%)));
   color: white;
   fill: white;
   text-transform: uppercase;
@@ -201,12 +201,12 @@ body {
   --lightness-offset: 10%;
 }
 .column-center__middle__game-area .key.wrong {
-  background-color: #39393c00;
+  background-color: #39393c;
 }
 .column-center__middle__game-area .key.wrong-location {
-  --hue: 49;
-  --saturation: 51%;
-  --lightness: 47%;
+  --hue: 39;
+  --saturation: 98%;
+  --lightness: 32%;
 }
 .column-center__middle__game-area .key.correct {
   --hue: 115;
@@ -374,7 +374,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: #538d4e71;
+  background-color: #00000074;
   position: absolute;
   left: 0%;
   top: 0vh;
@@ -416,7 +416,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: #538d4e71;
+  background-color: #00000074;
   position: absolute;
   left: 0%;
   top: 0vh;

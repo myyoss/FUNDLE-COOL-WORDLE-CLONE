@@ -40,7 +40,7 @@ function handleLoadAllUsers() {
             numbering += 1;
             lightness -= 5;
             html += ` <div>
-        <div class="usersStats" style="background-color: hsl(46, 70%, ${lightness}%);"><span style="color: #fff;">${numbering}. ${user.name}</span> ${user.wins}/${user.played} (${((user.wins / user.played) * 100).toFixed(1)})%</div></br>
+        <div class="usersStats" style="background-color: hsl(39, 100%, ${lightness}%);"><span style="color: #fff;">${numbering}. ${user.name}</span> ${user.wins}/${user.played} (${((user.wins / user.played) * 100).toFixed(1)})%</div></br>
         </div>`;
         });
         document.getElementById('userRoot').innerHTML = html;

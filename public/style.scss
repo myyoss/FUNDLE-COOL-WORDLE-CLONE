@@ -1,7 +1,7 @@
 $background: #000000;
 $popbackground: #538d4e;
-$outer-pop-background:#538d4e71;
-$borders: #ffffff;
+$outer-pop-background:#00000074;
+$borders: #ffffff9e;
 $green: #538d4e;
 $orange: hsl(46, 70%, 58%);
 $text: white;
@@ -10,9 +10,9 @@ $poptext:white;
 $keybnoard: #818181;
 $log-reg-btn: #dfbc48;
 
-div {
-  border: red solid 1px;
-}
+// div {
+//   border: red solid 1px;
+// }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -45,6 +45,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 
 }
+
 
 .column-left {
   &__top {
@@ -200,13 +201,14 @@ body {
           }
 
           &[data-state="wrong"] {
-            // border-color: #39393c;
-            // background-color: #39393c;
+            border-color: #39393c;
+            background-color: hsl(240, 3%, 23%);
           }
 
           &[data-state="wrong-location"] {
-            border-color: hsl(49, 57%, 47%);
-            background-color: hsl(49, 57%, 47%);
+            border-color: hsl(39, 98%, 32%);
+            background-color: #a26a02;
+
           }
 
           &[data-state="correct"] {
@@ -237,9 +239,13 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: hsl(var(--hue, 48),
-            var(--saturation, 79%),
-            calc(var(--lightness-offset, 0%) + var(--lightness, 55%)));
+        background-color:
+        // hsl(200deg 1% 51%);
+
+        hsl(var(--hue, 200),
+            var(--saturation, 1%),
+            calc(var(--lightness-offset, 0%) + var(--lightness, 51%)));
+
         color: white;
         fill: white;
         text-transform: uppercase;
@@ -264,15 +270,22 @@ body {
       }
 
       .key.wrong {
-        background-color: #39393c00;
+        // background-color: #39393c00;
+        // --hue: 49;
+        // --saturation: 51%;
+        // --lightness: 37%;
+        background-color: hsl(240, 3%, 23%);
 
         // --lightness: 23%
       }
 
       .key.wrong-location {
-        --hue: 49;
-        --saturation: 51%;
-        --lightness: 47%;
+        --hue: 39;
+        --saturation: 98%;
+        --lightness: 32%;
+        // --hue: 115;
+        // --saturation: 29%;
+        // --lightness: 23%;
       }
 
       .key.correct {
