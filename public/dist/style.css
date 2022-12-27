@@ -930,7 +930,7 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(20, minmax(auto, 1em));
-    grid-auto-rows: 1.6em;
+    grid-auto-rows: 2.2em;
     gap: 0.15em;
     justify-content: center;
     font-size: clamp(1.5rem, 2.5vmin, 1.5rem);
