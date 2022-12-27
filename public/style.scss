@@ -915,15 +915,16 @@ body {
 
 @media (max-width:400px){
   body {
-    width: 100%;
-    height: 90vh;
-    margin: 0;
+    width: 94%;
+    // height: 90vh;
+    // margin: auto;
     background-color: $background;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     overflow-y: hidden;
     min-width: 0px;
+    background-color: #538d4e;
   }
   
   .wrapper {
@@ -1022,9 +1023,10 @@ body {
   }
   
   .column-center {
-    // div{
-    //   border: 1px solid red;
-    // }
+    div{
+      border: 1px solid red;
+    }
+
     &__top {
       height: 50px;
       display: flex;
@@ -1072,6 +1074,9 @@ body {
     }
   
     &__middle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       &__game-area {
         padding-bottom: 1rem;
         padding-top: 1rem;
