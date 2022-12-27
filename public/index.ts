@@ -37,9 +37,9 @@ async function handleLoadAllUsers() {
     let html = '';
     usersStats.forEach(user => {
         numbering += 1
-        lightness += 5
+        lightness -= 5
         html += ` <div>
-        <div class="usersStats" style="background-color: hsl(46, 70%, ${lightness}%);"><span style="color: #135e7c; font-weight: bold;">${numbering}. ${user.name}</span> ${user.wins}/${user.played} (${((user.wins / user.played) * 100).toFixed(1)})%</div></br>
+        <div class="usersStats" style="background-color: hsl(46, 70%, ${lightness}%);"><span style="color: #fff;">${numbering}. ${user.name}</span> ${user.wins}/${user.played} (${((user.wins / user.played) * 100).toFixed(1)})%</div></br>
         </div>`
     });
 
@@ -54,7 +54,7 @@ async function handleLoad() {
         storeUserName = data.username
         renderStats(storeUserName)
         const greetings = timeOfDay();
-        document.querySelector(".hello").innerHTML = `&nbsp;&nbsp;${greetings} <span style="color: green;">&nbsp;${storeUserName}</span>`
+        document.querySelector(".hello").innerHTML = `&nbsp;&nbsp;${greetings} <span style="color: #538d4e;">&nbsp;${storeUserName}</span>`
 
         const logOutDisply: any = document.querySelector("#logOutDisply")
         logOutDisply.style.display = 'block'
@@ -63,7 +63,7 @@ async function handleLoad() {
     } else {
 
         const greetings = timeOfDay();
-        document.querySelector(".hello").innerHTML = `&nbsp;&nbsp;${greetings} <span style="color: green;">&nbsp;${'Guest'}</span>`
+        document.querySelector(".hello").innerHTML = `&nbsp;&nbsp;${greetings} <span style="color: #538d4e;">&nbsp;${'Guest'}</span>`
         handleShowWindow('logreg')
 
     }
@@ -468,7 +468,7 @@ async function loginPractice(username, password) {
     const greetings = timeOfDay();
 
     if (data.user) {
-        document.querySelector(".hello").innerHTML = `&nbsp;&nbsp;${greetings} <span style="color: green; font-weight: bolder;">&nbsp;${username}</span>`
+        document.querySelector(".hello").innerHTML = `&nbsp;&nbsp;${greetings} <span style="color: #538d4e; font-weight: bolder;">&nbsp;${username}</span>`
         handleShowWindow('logreg');
         storeUserName = username;
     }
@@ -492,7 +492,7 @@ async function handleLogOut(username, password) {
 
     const greetings = timeOfDay();
 
-    document.querySelector(".hello").innerHTML = `&nbsp;&nbsp;${greetings} <span style="color: green; font-weight: bolder;">&nbsp;${username}</span>`
+    document.querySelector(".hello").innerHTML = `&nbsp;&nbsp;${greetings} <span style="color: #538d4e; font-weight: bolder;">&nbsp;${username}</span>`
 
     window.location.reload();
 }
