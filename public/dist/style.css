@@ -849,7 +849,7 @@ body {
     align-items: center;
     font-family: "Alfa Slab One", cursive;
     font-family: "Roboto Slab", serif;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     font-weight: 100;
     padding-left: 1rem;
   }
@@ -857,8 +857,11 @@ body {
     background-color: #538d4e;
     width: 4rem;
     text-align: center;
+    padding: 0.2rem;
+    margin-top: 0.8rem;
     border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
     color: white;
     cursor: pointer;
   }
