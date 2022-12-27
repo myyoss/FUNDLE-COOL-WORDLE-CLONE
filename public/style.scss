@@ -666,6 +666,8 @@ body {
 
 .loginwrapper,
 .registerwrapper {
+  display: none;
+  
   position: relative;
   margin: auto;
   bottom: 80vh;
