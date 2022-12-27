@@ -161,7 +161,9 @@ body {
   background-color: #538d4e;
 }
 .column-center__middle__game-area__keyboard {
+  box-sizing: border-box;
   padding-top: 4vh;
+  padding: 1em;
   width: 40rem;
   margin: auto;
   display: grid;
