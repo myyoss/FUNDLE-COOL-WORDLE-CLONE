@@ -11,7 +11,7 @@ import wordRoutes from "./routes/wordRoutes"
 const cookieParser = require('cookie-parser')
 
 const app = express();
-const port = process.env.PORT || 3006;
+const port = process.env.PORT || 3007;
 app.use(express.static("public"));
 app.use(express.json());
 app.use(cookieParser());
