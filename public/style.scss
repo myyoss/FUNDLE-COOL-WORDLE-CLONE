@@ -929,13 +929,13 @@ body {
     // background-color: #538d4e;
   }
   div{
-    border: 1px solid rgb(234, 255, 0);
+    // border: 1px solid rgb(234, 255, 0);
   }
   .wrapper {
     // box-sizing: border-box;
     // width: 60%;
     // padding: 1rem;
-    // width: 100%;
+    width: 100%;
     // height: 670px;
     margin: auto;
   
@@ -1054,7 +1054,7 @@ body {
         width: 4rem;
         text-align: center;
         padding: 0.2rem;
-        margin-top: 0.8rem;
+        // margin-top: 0.8rem;
         border-radius: 4px;
         // border: 1px solid rgba(255, 255, 255, 0.24);
         // font-weight: bold;
@@ -1140,8 +1140,8 @@ body {
         &__keyboard {
           box-sizing: border-box;
           padding-top: 4vh;
-          padding-left: 2rem;
-          padding-right: 2rem;
+          padding-left: 1.4rem;
+          padding-right: 1.4rem;
           width: 26rem;
           margin: auto;
           display: grid;

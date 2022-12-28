@@ -771,11 +771,8 @@ body {
     min-width: 0px;
   }
 
-  div {
-    border: 1px solid #eaff00;
-  }
-
   .wrapper {
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -868,7 +865,6 @@ body {
     width: 4rem;
     text-align: center;
     padding: 0.2rem;
-    margin-top: 0.8rem;
     border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -936,8 +932,8 @@ body {
   .column-center__middle__game-area__keyboard {
     box-sizing: border-box;
     padding-top: 4vh;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
     width: 26rem;
     margin: auto;
     display: grid;
