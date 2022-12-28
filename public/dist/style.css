@@ -758,17 +758,21 @@ body {
 @media (max-width: 1000px) {
   body {
     width: 88%;
+    box-sizing: border-box;
     margin: auto;
-    padding: 1rem;
     background-color: #000000;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
     overflow-y: hidden;
     min-width: 0px;
   }
 
+  div {
+    border: 1px solid #eaff00;
+  }
+
   .wrapper {
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -842,7 +846,10 @@ body {
   }
 
   .column-center__top {
+    box-sizing: border-box;
     height: 50px;
+    width: 90%;
+    margin: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -850,9 +857,9 @@ body {
     font-family: "Roboto Slab", serif;
     letter-spacing: 0px;
     font-weight: 100;
-    padding-left: 1rem;
   }
   .column-center__top .getNewWord {
+    box-sizing: border-box;
     background-color: #538d4e;
     width: 4rem;
     text-align: center;
@@ -925,8 +932,8 @@ body {
   .column-center__middle__game-area__keyboard {
     box-sizing: border-box;
     padding-top: 4vh;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     width: 26rem;
     margin: auto;
     display: grid;

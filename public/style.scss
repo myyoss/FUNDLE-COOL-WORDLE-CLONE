@@ -917,24 +917,25 @@ body {
   body {
     width: 88%;
     // height: 90vh;
+    box-sizing: border-box;
     margin: auto;
-    padding: 1rem;
     background-color: $background;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
     overflow-y: hidden;
     min-width: 0px;
     // background-color: #538d4e;
   }
   div{
-    // border: 1px solid red;
+    border: 1px solid rgb(234, 255, 0);
   }
   .wrapper {
+    // box-sizing: border-box;
     // width: 60%;
+    // padding: 1rem;
     // width: 100%;
     // height: 670px;
-    // margin: auto;
+    margin: auto;
   
     display: flex;
     flex-direction: column;
@@ -1031,7 +1032,10 @@ body {
     // }
 
     &__top {
+      box-sizing: border-box;
       height: 50px;
+      width: 90%;
+      margin: auto;
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -1040,9 +1044,10 @@ body {
       font-family: 'Roboto Slab', serif;
       letter-spacing: 0px;
       font-weight: 100;
-      padding-left: 1rem;
+      // padding-left: 1rem;
   
       .getNewWord {
+        box-sizing: border-box;
         background-color: $green;
         width: 4rem;
         text-align: center;
@@ -1133,8 +1138,8 @@ body {
         &__keyboard {
           box-sizing: border-box;
           padding-top: 4vh;
-          padding-left: 1rem;
-          padding-right: 1rem;
+          padding-left: 2rem;
+          padding-right: 2rem;
           width: 26rem;
           margin: auto;
           display: grid;
