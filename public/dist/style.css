@@ -10,6 +10,10 @@ input:-webkit-autofill {
   -webkit-text-fill-color: #ffffff !important;
 }
 
+* {
+  touch-action: manipulation;
+}
+
 body {
   margin: 0;
   background-color: #000000;
