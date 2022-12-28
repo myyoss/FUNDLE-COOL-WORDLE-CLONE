@@ -526,7 +526,6 @@ body {
 
 .loginwrapper,
 .registerwrapper {
-  display: none;
   position: relative;
   margin: auto;
   bottom: 80vh;
@@ -1298,6 +1297,7 @@ body {
   @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap");
   .loginwrapper,
 .registerwrapper {
+    display: none;
     position: relative;
     margin: auto;
     bottom: 80vh;
