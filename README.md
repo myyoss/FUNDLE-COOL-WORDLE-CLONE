@@ -1,4 +1,5 @@
 # FUNDLE! A_WORDLE_CLONE
+JavaScript/TypeScript/MongoDB
 With some cool features:
 
 - Registration and statistics!
