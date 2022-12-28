@@ -913,11 +913,11 @@ body {
 // MEDIA QUERIES=============================================================MEDIA QUERIES
 
 
-@media (max-width:400px){
+@media (max-width:1000px){
   body {
-    width: 94%;
+    width: 92%;
     // height: 90vh;
-    // margin: auto;
+    margin: auto;
     background-color: $background;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
@@ -926,7 +926,9 @@ body {
     min-width: 0px;
     // background-color: #538d4e;
   }
-  
+  div{
+    border: 1px solid red;
+  }
   .wrapper {
     // width: 60%;
     // width: 100%;
