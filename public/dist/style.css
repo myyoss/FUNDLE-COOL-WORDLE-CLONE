@@ -757,7 +757,7 @@ body {
 }
 @media (max-width: 1000px) {
   body {
-    width: 92%;
+    width: 88%;
     margin: auto;
     padding: 1rem;
     background-color: #000000;
