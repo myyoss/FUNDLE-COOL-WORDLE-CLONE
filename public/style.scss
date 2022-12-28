@@ -931,7 +931,7 @@ body {
     // background-color: #538d4e;
   }
   div{
-    border: 1px solid rgb(94, 88, 96);
+    // border: 1px solid rgb(94, 88, 96);
   }
   .wrapper {
     // box-sizing: border-box;
@@ -1147,9 +1147,9 @@ body {
           width: 26rem;
           margin: auto;
           display: grid;
-          grid-template-columns: repeat(20, minmax(auto, 1rem));
+          grid-template-columns: repeat(20, minmax(auto, 1.2rem));
           grid-auto-rows: 3.2rem;
-          gap: .2rem;
+          gap: .1rem;
           justify-content: center;
           font-size: clamp(1.5rem, 2.5vmin, 1.5rem);
         }

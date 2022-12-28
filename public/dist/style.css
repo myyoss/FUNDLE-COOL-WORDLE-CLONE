@@ -773,10 +773,6 @@ body {
     padding: 0%;
   }
 
-  div {
-    border: 1px solid #5e5860;
-  }
-
   .wrapper {
     width: 100%;
     margin: auto;
@@ -943,9 +939,9 @@ body {
     width: 26rem;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(20, minmax(auto, 1rem));
+    grid-template-columns: repeat(20, minmax(auto, 1.2rem));
     grid-auto-rows: 3.2rem;
-    gap: 0.2rem;
+    gap: 0.1rem;
     justify-content: center;
     font-size: clamp(1.5rem, 2.5vmin, 1.5rem);
   }
