@@ -9,7 +9,8 @@ With some cool features:
 
 ![home](https://user-images.githubusercontent.com/93940739/209814652-a560b229-b847-4f5b-b783-4dcce120d148.png)
 
-![register](https://user-images.githubusercontent.com/93940739/209814673-3862c2de-42bd-4849-bf37-fc975301352c.png)
+![register](https://user-images.githubusercontent.com/93940739/209814996-8b87add8-26d1-46c0-8425-65369ebdc158.png)
 
-![stats](https://user-images.githubusercontent.com/93940739/209814694-4299fa95-2688-400c-b033-0df515a5a776.png)
+![stats](https://user-images.githubusercontent.com/93940739/209815027-4e934ee1-0126-4c6a-b9f8-033b896961c0.png)
+
 
