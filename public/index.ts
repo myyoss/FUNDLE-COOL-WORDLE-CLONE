@@ -64,7 +64,9 @@ async function handleLoad() {
 
         const greetings = timeOfDay();
         document.querySelector(".hello").innerHTML = `&nbsp;&nbsp;${greetings} <span style="color: #538d4e;">&nbsp;${'Guest'}</span>`
-        handleShowWindow('logreg')
+        // handleShowWindow('logreg')
+        handleLoadAllUsers()
+        getNewWord()
 
     }
 
@@ -324,6 +326,7 @@ async function checkWinLose(guess, tiles) {
         setTimeout(() => {
             handleShowWindow('stats')
         }, 1500);
+        
         return
     }
 
@@ -381,16 +384,15 @@ function showAlert(message, duration = 1000) {
 function handleShowWindow(window) {
     handleLoadAllUsers()
     getNewWord()
-    startInteraction()
+    const stats: any = document.querySelector(`#${window}`);
+    if (stats.style.display === "none") {
+        stats.style.display = "block";
+        startInteraction()
 
-    // const stats: any = document.querySelector(`#${window}`);
-    // if (stats.style.display === "none") {
-    //     stats.style.display = "block";
-    //     stopInteraction()
-    // } else {
-    //     stats.style.display = "none";
-    //     startInteraction()
-    // }
+    } else {
+        stats.style.display = "none";
+        startInteraction()
+    }
 }
 
 function handleNotAMember() {

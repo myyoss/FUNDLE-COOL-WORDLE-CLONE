@@ -61,7 +61,9 @@ function handleLoad() {
         else {
             const greetings = timeOfDay();
             document.querySelector(".hello").innerHTML = `&nbsp;&nbsp;${greetings} <span style="color: #538d4e;">&nbsp;${'Guest'}</span>`;
-            handleShowWindow('logreg');
+            // handleShowWindow('logreg')
+            handleLoadAllUsers();
+            getNewWord();
         }
         //consol log user statistics (document.cookie defined down)
         // console.log('handleLoad-cookies', document.cookie)
@@ -326,15 +328,15 @@ function showAlert(message, duration = 1000) {
 function handleShowWindow(window) {
     handleLoadAllUsers();
     getNewWord();
-    startInteraction();
-    // const stats: any = document.querySelector(`#${window}`);
-    // if (stats.style.display === "none") {
-    //     stats.style.display = "block";
-    //     stopInteraction()
-    // } else {
-    //     stats.style.display = "none";
-    //     startInteraction()
-    // }
+    const stats = document.querySelector(`#${window}`);
+    if (stats.style.display === "none") {
+        stats.style.display = "block";
+        startInteraction();
+    }
+    else {
+        stats.style.display = "none";
+        startInteraction();
+    }
 }
 function handleNotAMember() {
     const register = document.querySelector(".registerwrapper");
