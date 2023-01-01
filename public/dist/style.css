@@ -783,7 +783,7 @@ body {
   }
 
   .column-left {
-    display: none;
+    display: none !important;
   }
   .column-left__top {
     display: flex;
@@ -988,7 +988,7 @@ body {
   }
 
   .column-right {
-    display: none;
+    display: none !important;
   }
   .column-right__top-right {
     height: 50px;
@@ -1017,6 +1017,7 @@ body {
     align-items: center;
   }
   .column-right__middle {
+    display: none !important;
     width: 100%;
     background-color: #538d4e;
     color: #ffffff;

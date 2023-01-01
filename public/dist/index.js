@@ -326,15 +326,15 @@ function showAlert(message, duration = 1000) {
 function handleShowWindow(window) {
     handleLoadAllUsers();
     getNewWord();
-    const stats = document.querySelector(`#${window}`);
-    if (stats.style.display === "none") {
-        stats.style.display = "block";
-        stopInteraction();
-    }
-    else {
-        stats.style.display = "none";
-        startInteraction();
-    }
+    startInteraction();
+    // const stats: any = document.querySelector(`#${window}`);
+    // if (stats.style.display === "none") {
+    //     stats.style.display = "block";
+    //     stopInteraction()
+    // } else {
+    //     stats.style.display = "none";
+    //     startInteraction()
+    // }
 }
 function handleNotAMember() {
     const register = document.querySelector(".registerwrapper");
