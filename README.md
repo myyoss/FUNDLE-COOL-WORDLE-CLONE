@@ -1,6 +1,8 @@
 # FUNDLE! A bit Different WORDLE Clone
 JavaScript/TypeScript/MongoDB
+
 I love this game!
+
 Here are somee cool features I wish I had:
 
 - Registration✍️
