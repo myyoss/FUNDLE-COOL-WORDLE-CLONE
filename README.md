@@ -5,7 +5,7 @@ I love this game!
 
 Here are some cool features I wish I had:
 
-- Registration✍️
+- Registration✍️ Love to see new users
 - Statistics🏓
 - Real time List of TOP users score 🏆
 - Play as many games as you want💐
