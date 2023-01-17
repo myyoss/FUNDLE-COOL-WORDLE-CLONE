@@ -13,6 +13,7 @@ Here are some cool features I wish I had:
 
 LIVE DEMO:
 https://fundle.onrender.com/
+(registration only on desktop)
 
 ![home](https://user-images.githubusercontent.com/93940739/209814652-a560b229-b847-4f5b-b783-4dcce120d148.png)
 
