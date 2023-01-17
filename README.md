@@ -3,7 +3,7 @@ JavaScript/TypeScript/MongoDB
 
 I love this game!
 
-Here are somee cool features I wish I had:
+Here are some cool features I wish I had:
 
 - Registration✍️
 - Statistics🏓
